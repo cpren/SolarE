@@ -71,21 +71,6 @@
         <statement name="DO1">
           <block type="movement_setmotors" id="110" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_arithmetic" id="112" inline="true">
-                <field name="OP">MINUS</field>
-                <value name="A">
-                  <block type="sensor_light" id="113">
-                    <field name="LIGHT">LEFT</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="sensor_light" id="114">
-                    <field name="LIGHT">RIGHT</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
               <block type="math_arithmetic" id="121" inline="true">
                 <field name="OP">MULTIPLY</field>
                 <value name="A">
@@ -110,6 +95,21 @@
                 </value>
               </block>
             </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_arithmetic" id="112" inline="true">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <block type="sensor_light" id="113">
+                    <field name="LIGHT">LEFT</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="sensor_light" id="114">
+                    <field name="LIGHT">RIGHT</field>
+                  </block>
+                </value>
+              </block>
+            </value>
           </block>
         </statement>
         <value name="IF2">
@@ -130,6 +130,21 @@
         <statement name="DO2">
           <block type="movement_setmotors" id="111" inline="true">
             <value name="BOTHMOVLEFT">
+              <block type="math_arithmetic" id="132" inline="true">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <block type="sensor_light" id="133">
+                    <field name="LIGHT">RIGHT</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="sensor_light" id="134">
+                    <field name="LIGHT">LEFT</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
               <block type="math_arithmetic" id="135" inline="true">
                 <field name="OP">MULTIPLY</field>
                 <value name="A">
@@ -150,21 +165,6 @@
                 <value name="B">
                   <block type="math_number" id="139">
                     <field name="NUM">-1</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_arithmetic" id="132" inline="true">
-                <field name="OP">MINUS</field>
-                <value name="A">
-                  <block type="sensor_light" id="133">
-                    <field name="LIGHT">RIGHT</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="sensor_light" id="134">
-                    <field name="LIGHT">LEFT</field>
                   </block>
                 </value>
               </block>
