@@ -71,6 +71,26 @@
         <statement name="DO1">
           <block type="movement_setmotors" id="110" inline="true">
             <value name="BOTHMOVLEFT">
+              <block type="math_single" id="147" inline="true">
+                <field name="OP">ABS</field>
+                <value name="NUM">
+                  <block type="math_arithmetic" id="148" inline="true">
+                    <field name="OP">MINUS</field>
+                    <value name="A">
+                      <block type="sensor_light" id="149">
+                        <field name="LIGHT">LEFT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="sensor_light" id="150">
+                        <field name="LIGHT">RIGHT</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
               <block type="math_arithmetic" id="121" inline="true">
                 <field name="OP">MULTIPLY</field>
                 <value name="A">
@@ -100,26 +120,6 @@
                 </value>
               </block>
             </value>
-            <value name="BOTHMOVRIGHT">
-              <block type="math_single" id="147" inline="true">
-                <field name="OP">ABS</field>
-                <value name="NUM">
-                  <block type="math_arithmetic" id="148" inline="true">
-                    <field name="OP">MINUS</field>
-                    <value name="A">
-                      <block type="sensor_light" id="149">
-                        <field name="LIGHT">LEFT</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="sensor_light" id="150">
-                        <field name="LIGHT">RIGHT</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
           </block>
         </statement>
         <value name="IF2">
@@ -140,26 +140,6 @@
         <statement name="DO2">
           <block type="movement_setmotors" id="151" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_single" id="158" inline="true">
-                <field name="OP">ABS</field>
-                <value name="NUM">
-                  <block type="math_arithmetic" id="159" inline="true">
-                    <field name="OP">MINUS</field>
-                    <value name="A">
-                      <block type="sensor_light" id="160">
-                        <field name="LIGHT">LEFT</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="sensor_light" id="161">
-                        <field name="LIGHT">RIGHT</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="BOTHMOVRIGHT">
               <block type="math_arithmetic" id="152" inline="true">
                 <field name="OP">MULTIPLY</field>
                 <value name="A">
@@ -185,6 +165,26 @@
                 <value name="B">
                   <block type="math_number" id="157">
                     <field name="NUM">-1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="BOTHMOVRIGHT">
+              <block type="math_single" id="158" inline="true">
+                <field name="OP">ABS</field>
+                <value name="NUM">
+                  <block type="math_arithmetic" id="159" inline="true">
+                    <field name="OP">MINUS</field>
+                    <value name="A">
+                      <block type="sensor_light" id="160">
+                        <field name="LIGHT">LEFT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="sensor_light" id="161">
+                        <field name="LIGHT">RIGHT</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
               </block>
