@@ -65,7 +65,7 @@
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="336" inline="true">
-            <field name="OP">GT</field>
+            <field name="OP">LT</field>
             <value name="A">
               <block type="sensor_light" id="337">
                 <field name="LIGHT">LEFT</field>
