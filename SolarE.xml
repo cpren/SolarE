@@ -137,12 +137,12 @@
                     <field name="OP">MINUS</field>
                     <value name="A">
                       <block type="sensor_light" id="137">
-                        <field name="LIGHT">LEFT</field>
+                        <field name="LIGHT">RIGHT</field>
                       </block>
                     </value>
                     <value name="B">
                       <block type="sensor_light" id="138">
-                        <field name="LIGHT">RIGHT</field>
+                        <field name="LIGHT">LEFT</field>
                       </block>
                     </value>
                   </block>
@@ -159,12 +159,12 @@
                 <field name="OP">MINUS</field>
                 <value name="A">
                   <block type="sensor_light" id="133">
-                    <field name="LIGHT">LEFT</field>
+                    <field name="LIGHT">RIGHT</field>
                   </block>
                 </value>
                 <value name="B">
                   <block type="sensor_light" id="134">
-                    <field name="LIGHT">RIGHT</field>
+                    <field name="LIGHT">LEFT</field>
                   </block>
                 </value>
               </block>
