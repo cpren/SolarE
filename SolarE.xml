@@ -71,21 +71,31 @@
         <statement name="DO1">
           <block type="movement_setmotors" id="110" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_single" id="147" inline="true">
-                <field name="OP">ABS</field>
-                <value name="NUM">
-                  <block type="math_arithmetic" id="148" inline="true">
-                    <field name="OP">MINUS</field>
-                    <value name="A">
-                      <block type="sensor_light" id="149">
-                        <field name="LIGHT">LEFT</field>
+              <block type="math_arithmetic" id="163" inline="true">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <block type="math_single" id="164" inline="true">
+                    <field name="OP">ABS</field>
+                    <value name="NUM">
+                      <block type="math_arithmetic" id="165" inline="true">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="sensor_light" id="166">
+                            <field name="LIGHT">LEFT</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="sensor_light" id="167">
+                            <field name="LIGHT">RIGHT</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
-                    <value name="B">
-                      <block type="sensor_light" id="150">
-                        <field name="LIGHT">RIGHT</field>
-                      </block>
-                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="168">
+                    <field name="NUM">2</field>
                   </block>
                 </value>
               </block>
@@ -170,21 +180,31 @@
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_single" id="158" inline="true">
-                <field name="OP">ABS</field>
-                <value name="NUM">
-                  <block type="math_arithmetic" id="159" inline="true">
-                    <field name="OP">MINUS</field>
-                    <value name="A">
-                      <block type="sensor_light" id="160">
-                        <field name="LIGHT">LEFT</field>
+              <block type="math_arithmetic" id="169" inline="true">
+                <field name="OP">MULTIPLY</field>
+                <value name="A">
+                  <block type="math_single" id="170" inline="true">
+                    <field name="OP">ABS</field>
+                    <value name="NUM">
+                      <block type="math_arithmetic" id="171" inline="true">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="sensor_light" id="172">
+                            <field name="LIGHT">LEFT</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="sensor_light" id="173">
+                            <field name="LIGHT">RIGHT</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
-                    <value name="B">
-                      <block type="sensor_light" id="161">
-                        <field name="LIGHT">RIGHT</field>
-                      </block>
-                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="174">
+                    <field name="NUM">2</field>
                   </block>
                 </value>
               </block>
