@@ -7,62 +7,112 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="7" inline="false">
-        <mutation else="1"></mutation>
+      <block type="controls_if" id="309" inline="false">
+        <mutation elseif="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="34" inline="true">
-            <field name="OP">LT</field>
+          <block type="logic_compare" id="323" inline="true">
+            <field name="OP">GT</field>
             <value name="A">
-              <block type="math_single" id="41" inline="true">
-                <field name="OP">ABS</field>
-                <value name="NUM">
-                  <block type="math_arithmetic" id="48" inline="true">
-                    <field name="OP">MINUS</field>
-                    <value name="A">
-                      <block type="sensor_light" id="63">
-                        <field name="LIGHT">LEFT</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="sensor_light" id="64">
-                        <field name="LIGHT">RIGHT</field>
+              <block type="sensor_light" id="330">
+                <field name="LIGHT">LEFT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="sensor_light" id="331">
+                <field name="LIGHT">RIGHT</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="movement_setmotors" id="244" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_arithmetic" id="265" inline="true">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <block type="math_number" id="278">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_single" id="301" inline="true">
+                    <field name="OP">ABS</field>
+                    <value name="NUM">
+                      <block type="math_arithmetic" id="288" inline="true">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="sensor_light" id="258">
+                            <field name="LIGHT">LEFT</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="sensor_light" id="302">
+                            <field name="LIGHT">LEFT</field>
+                          </block>
+                        </value>
                       </block>
                     </value>
                   </block>
                 </value>
               </block>
             </value>
-            <value name="B">
-              <block type="math_number" id="71">
-                <field name="NUM">5</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO0">
-          <block type="movement_setmotors" id="81" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="math_number" id="82">
-                <field name="NUM">50</field>
-              </block>
-            </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="83">
-                <field name="NUM">50</field>
+              <block type="math_number" id="316">
+                <field name="NUM">100</field>
               </block>
             </value>
           </block>
         </statement>
-        <statement name="ELSE">
-          <block type="movement_setmotors" id="199" inline="true">
-            <value name="BOTHMOVLEFT">
-              <block type="sensor_light" id="99">
+        <value name="IF1">
+          <block type="logic_compare" id="336" inline="true">
+            <field name="OP">GT</field>
+            <value name="A">
+              <block type="sensor_light" id="337">
+                <field name="LIGHT">LEFT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="sensor_light" id="338">
                 <field name="LIGHT">RIGHT</field>
               </block>
             </value>
+          </block>
+        </value>
+        <statement name="DO1">
+          <block type="movement_setmotors" id="339" inline="true">
+            <value name="BOTHMOVLEFT">
+              <block type="math_number" id="346">
+                <field name="NUM">100</field>
+              </block>
+            </value>
             <value name="BOTHMOVRIGHT">
-              <block type="sensor_light" id="100">
-                <field name="LIGHT">LEFT</field>
+              <block type="math_arithmetic" id="340" inline="true">
+                <field name="OP">MINUS</field>
+                <value name="A">
+                  <block type="math_number" id="341">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_single" id="342" inline="true">
+                    <field name="OP">ABS</field>
+                    <value name="NUM">
+                      <block type="math_arithmetic" id="343" inline="true">
+                        <field name="OP">MINUS</field>
+                        <value name="A">
+                          <block type="sensor_light" id="344">
+                            <field name="LIGHT">LEFT</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="sensor_light" id="345">
+                            <field name="LIGHT">LEFT</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
               </block>
             </value>
           </block>
