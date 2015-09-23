@@ -1,52 +1,52 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="14" inline="false" x="-10" y="-24">
+  <block type="controls_whileUntil" id="1" inline="false" x="-10" y="-24">
     <field name="MODE">WHILE</field>
     <value name="NUMBER">
-      <block type="math_number" id="27">
+      <block type="math_number" id="2">
         <field name="NUM">1</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="controls_if" id="309" inline="false">
+      <block type="controls_if" id="3" inline="false">
         <mutation elseif="1"></mutation>
         <value name="IF0">
-          <block type="logic_compare" id="323" inline="true">
+          <block type="logic_compare" id="4" inline="true">
             <field name="OP">GT</field>
             <value name="A">
-              <block type="sensor_light" id="330">
+              <block type="sensor_light" id="5">
                 <field name="LIGHT">LEFT</field>
               </block>
             </value>
             <value name="B">
-              <block type="sensor_light" id="331">
+              <block type="sensor_light" id="6">
                 <field name="LIGHT">RIGHT</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_setmotors" id="244" inline="true">
+          <block type="movement_setmotors" id="7" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_arithmetic" id="265" inline="true">
+              <block type="math_arithmetic" id="8" inline="true">
                 <field name="OP">MINUS</field>
                 <value name="A">
-                  <block type="math_number" id="278">
+                  <block type="math_number" id="9">
                     <field name="NUM">100</field>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_single" id="301" inline="true">
+                  <block type="math_single" id="10" inline="true">
                     <field name="OP">ABS</field>
                     <value name="NUM">
-                      <block type="math_arithmetic" id="288" inline="true">
+                      <block type="math_arithmetic" id="11" inline="true">
                         <field name="OP">MINUS</field>
                         <value name="A">
-                          <block type="sensor_light" id="258">
+                          <block type="sensor_light" id="12">
                             <field name="LIGHT">LEFT</field>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="sensor_light" id="302">
+                          <block type="sensor_light" id="13">
                             <field name="LIGHT">RIGHT</field>
                           </block>
                         </value>
@@ -57,55 +57,55 @@
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_number" id="316">
+              <block type="math_number" id="14">
                 <field name="NUM">100</field>
               </block>
             </value>
           </block>
         </statement>
         <value name="IF1">
-          <block type="logic_compare" id="336" inline="true">
+          <block type="logic_compare" id="15" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_light" id="337">
+              <block type="sensor_light" id="16">
                 <field name="LIGHT">LEFT</field>
               </block>
             </value>
             <value name="B">
-              <block type="sensor_light" id="338">
+              <block type="sensor_light" id="17">
                 <field name="LIGHT">RIGHT</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_setmotors" id="339" inline="true">
+          <block type="movement_setmotors" id="18" inline="true">
             <value name="BOTHMOVLEFT">
-              <block type="math_number" id="346">
+              <block type="math_number" id="19">
                 <field name="NUM">100</field>
               </block>
             </value>
             <value name="BOTHMOVRIGHT">
-              <block type="math_arithmetic" id="340" inline="true">
+              <block type="math_arithmetic" id="20" inline="true">
                 <field name="OP">MINUS</field>
                 <value name="A">
-                  <block type="math_number" id="341">
+                  <block type="math_number" id="21">
                     <field name="NUM">100</field>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_single" id="342" inline="true">
+                  <block type="math_single" id="22" inline="true">
                     <field name="OP">ABS</field>
                     <value name="NUM">
-                      <block type="math_arithmetic" id="343" inline="true">
+                      <block type="math_arithmetic" id="23" inline="true">
                         <field name="OP">MINUS</field>
                         <value name="A">
-                          <block type="sensor_light" id="344">
+                          <block type="sensor_light" id="24">
                             <field name="LIGHT">LEFT</field>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="sensor_light" id="345">
+                          <block type="sensor_light" id="25">
                             <field name="LIGHT">RIGHT</field>
                           </block>
                         </value>
